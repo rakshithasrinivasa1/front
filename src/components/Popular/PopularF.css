@@ -1,0 +1,261 @@
+/* Popular Services Section */
+.popular-services {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .services-title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .services-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Horizontal scrolling */
+    padding: 10px;
+  }
+  
+/* Service card styles */
+.service-card {
+  min-width: 210px;
+  max-width: 250px;
+  min-height: 270px;
+  max-height: 300px;
+  background-color: #e0f2fa51;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  margin-left: 5px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px); /* Move the card up slightly */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.service-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #0053A8;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.service-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.blue-box {
+  width: 100%;
+  height: 4cm;
+  background-color: #0053A8;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex; /* Arrange columns in a row */
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.box-column {
+  color: white;
+  text-align: center;
+}
+
+.box-column p {
+  margin: 3px 0;
+  font-size: 1.2em;
+  line-height: 1.2; 
+}
+
+.box-column p:first-child {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1; /* Tighter line height for the first line */
+}
+
+.whats-new-title {
+  font-size: 3.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+  color: #212020;
+}
+
+.whats-new-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px;
+  padding: 0 20px; /* Padding on the sides */
+}
+
+.whats-new-card {
+  background-color: #f6f3f3;
+  border-radius: 10px;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 180px;
+  width: 200px;  transition: none;
+  margin-bottom: 50px;
+}
+
+.whats-new-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.whats-new-title-bold {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.whats-new-description {
+  font-size: 0.9em;
+  color: #555;
+  text-align: center;
+}
+
+.payment-box {
+  width: 100%;
+  height: 3cm;
+  background-color: #2f2fef;
+  display: flex; /* Arrange columns in a row */
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+}
+
+.payment-column {
+  color: white;
+  text-align: center;
+  flex: 1; /* Make columns equally spaced */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+.payment-description {
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+.payment-image {
+  width: 80px;
+  height: 100px;
+  object-fit: contain; /* Ensure the image fits inside the box without distortion */
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+/* New Blue Box Section */
+.new-blue-box {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  background-color: #ffffff;
+  display: flex; /* Arrange columns in a row */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-left: 200px;
+}
+/* Image Column */
+.new-box-column {
+  flex-shrink: 0; /* Prevent image from shrinking */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-box-image {
+  width: 160px;
+  height: 170px;
+  border-radius: 5px;
+  object-fit: contain; /* Ensure proper scaling */
+}
+
+/* Cards Next to Image */
+.new-box-card {
+  flex: 1;
+  max-width: 200px;
+  background-color: #afaff4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  flex-shrink: 0; /* Prevent shrinking of cards */
+}
+
+/* Text Styling for Cards */
+.new-box-paragraph {
+  font-size: 1.2em;
+  color: #ffff;
+  margin: 5px 0; /* Space between paragraphs */
+}
+
+.new-box-highlight {
+  font-size: 1.5em;
+  color: #007bff;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Light Blue Background Section */
+.light-blue-background {
+  width: 100%;
+  height: 20cm;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+/* Image Inside the Light Blue Box */
+.light-blue-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
